@@ -1,0 +1,100 @@
+﻿header{
+    color:white;
+    margin-top:30px;
+}
+
+/*.container-fluid h1{
+    text-align:center;
+    color:yellow;
+}*/
+
+#containerMenu{
+    background-color:black;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+} 
+
+#containerMenu a{
+    color:white;
+}
+
+#containerMenu li a:hover{
+     background-color:white;
+     color:black;
+ }
+
+aside{
+    background-color:#C0392B;
+    text-align:left;
+    color:#FFF;
+}
+
+/*Galeria de Imagenes*/
+#galeria h1 p{
+    text-align:center;
+    color:black;
+}
+#galeria .caption {
+    text-align:center;
+    color:black;
+}
+/*Slider Interactivo*/
+#imagenes h1{
+    text-align:center;
+    color:black;
+}
+
+#galeria {
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/*Botones*/
+#botones p {
+    font-family: Algerian;
+    font-size: 25px;
+}
+/*Modal*/
+#modal p{
+    background-color:black;
+    font-size:25px; 
+}
+
+/*Footer*/
+#pie{
+    background-color:black;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    color:white;
+}
+#pie a,p{
+    text-align:center;
+    color:white;
+ }
+
+h1 {
+    font-family: 'Comic Sans MS';
+    color: green;
+    font-size: 60px;
+}
+
+#galeria p{
+    text-align: left;
+    color: black;
+    
+}
+
+#ComprarJuego, #Acercade, #formulario, #Home, #galeria {
+    background-color: whitesmoke;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+article{
+    margin-bottom:40px;
+    margin-top:40px;
+}
+
+
