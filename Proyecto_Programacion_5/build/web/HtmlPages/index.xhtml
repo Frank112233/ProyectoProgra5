@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Pagina de inicio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <!--Mi Hoja de Estilos Personalizada-->
+        <link rel="stylesheet" type="text/css" href="../css/miCSS.css" />
+    </h:head>
+    <h:body style="background:url(../Imagenes/Tacos.jpg) no-repeat; background-size: cover;">
+        <div class="container-fluid" >
+            <header class="col-xs-12" >
+                <nav class="navbar navbar-inverse" id="containerMenu">
+                    <div class="container-fluid" >
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.xhtml">Inicio</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="Acerca de.xhtml">Acerca de...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <!--Seccion Articulo y Side
+        <div cbar-->    
+        <div class="container" id="Home" style="margin-bottom: 30px; width:40%;" >
+            <section class="main" >
+                <article class="col-xs-12" style="margin-top: 0px;">
+                    <section class="main">
+                        <center>
+                        <h:form>
+                             <h3>Ingreso</h3>
+                             <table class="">
+                                <tr>
+                                    <td style="padding: 0.5em; padding-right: 1em;"><label>Usuario:</label></td>
+                                    <td><h:inputText></h:inputText></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5em; padding-right: 1em;"><label>Contraseña:</label></td>
+                                    <td><h:inputSecret ></h:inputSecret></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5em; padding-right: 1em;"><label>Role:</label></td>
+                                    <td><h:selectOneMenu></h:selectOneMenu></td>
+                                </tr>
+                            </table>
+                             <h:commandButton value="Aceptar" style="margin-left :5px;" class="btn btn-success" action="RegistroClientes.xhtml"></h:commandButton>
+                             <h:commandButton value="Cancelar" style="margin-left :5px;" class="btn btn-danger"></h:commandButton>
+                        </h:form>
+                            </center>
+                    </section>    
+                </article>
+            </section>
+        </div>
+
+        <!--Pie de Página-->
+        <div class="container-fluid" style="margin-bottom:40px" >
+            <footer class="col-xs-12">
+                <div id="pie">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <br />
+                            <p>
+                                <a href="Home.html">Home  |</a>
+                                <a href="Formulario.html">Contactenos</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Copyright &#169; Projecto progra 5 (UTN 2019)</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </h:body>
+</html>
+
