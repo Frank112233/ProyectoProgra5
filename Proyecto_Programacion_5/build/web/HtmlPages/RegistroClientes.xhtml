@@ -3,15 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Pagina de inicio</title>
+        <title>Registro clientes</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <link rel="stylesheet" href="../css/bootstrap.min.css" />
         <!--Mi Hoja de Estilos Personalizada-->
         <link rel="stylesheet" type="text/css" href="../css/miCSS.css" />
     </h:head>
-    <h:body style="background:url(../Imagenes/Tacos.jpg) no-repeat; background-size: cover;">
-
+    <h:body style="background:url(../Imagenes/Tacos.jpg) repeat-y; background-size: cover;">
         <div class="container-fluid" >
             <header class="col-xs-12" >
                 <nav class="navbar navbar-inverse" id="containerMenu">
@@ -22,22 +21,19 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="Home.html">Inicio</a>
+                            <a class="navbar-brand" href="index.xhtml">Inicio</a>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
                                 <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
-                                        Video Juegos <span class="caret"></span>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">Mantenimientos<span class="caret"></span>
                                     </a>
                                     <ul class="dropdown-menu" style="background-color:black">
-                                        <li> <a href="../HtmlPages/Galeria.html">Juegos para PS3</a> </li>
-                                        <li> <a href="Comprar Juego.html">Comprar Juego</a> </li>
-                                        <li> <a href="Formulario.html">Contactenos</a> </li>
+                                        <li> <a href="RegistroClientes.xhtml">Registrar Cliente</a> </li>
+                                        <li> <a href="RegistroProductos.xhtml">Registrar Productos</a> </li>
                                     </ul>
                                 </li>
-                                <li><a href="Acerca.html">Acerca de...</a></li>
-                                <li><a href="LogIn.html">Log in</a></li>
+                                <li><a href="Acerca de.xhtml">Acerca de...</a></li>
                             </ul>
                         </div>
                     </div>
@@ -47,28 +43,37 @@
 
         <!--Seccion Articulo y Side
         <div cbar-->    
-        <div class="container" id="Home" style="margin-bottom: 30px; width: 50%;" >
+        <div class="container" id="Home" style="margin-bottom: 30px; width: 90%;" >
             <section class="main" >
                 <article class="col-xs-12">
                     <section class="main">
-                        <h:form>
-                            
-                            <table>
-                                <tr class="col-xs-12"   >
-                                    <td><label>Usuario:</label></td>
-                                    <td><h:inputText ></h:inputText></td>
-                                </tr>
-                                <tr>
-                                    <td><label>Contraseña:</label></td>
-                                    <td><h:inputText></h:inputText></td>
-                                </tr>
-                                <tr>
-                                    <td><label>Role:</label></td>
-                                    <td><h:inputText></h:inputText></td>
-                                </tr>
-                            </table>
+                        <center>
+                            <h:form>
+                                <h3>Registro clientes</h3>
+                                <table >
+                                    <tr>
+                                        <td style="padding: 0.5em; padding-right: 1em;"><label>Identificación:</label></td>
+                                        <td><h:inputText ></h:inputText></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0.5em; padding-right: 1em;"><label>Teléfono:</label></td>
+                                        <td><h:inputText></h:inputText></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0.5em; padding-right: 1em;"><label>Dirección:</label></td>
+                                        <td><h:inputText></h:inputText></td>
+                                    </tr>
+                                </table><br></br>
                                 
-                        </h:form>
+                                <h:button value="Nuevo" class="btn btn-primary" ></h:button>
+                                <h:button value="Guardar" style="margin-left :5px;" class="btn btn-primary"></h:button>
+                                <h:button value="Buscar" style="margin-left :5px;" class="btn btn-primary"></h:button>
+                                <h:button value="Editar" style="margin-left :5px;" class="btn btn-primary"></h:button>
+                                <h:button value="Aceptar" style="margin-left :5px;" class="btn btn-success"></h:button>
+                                <h:button value="Salir" style="margin-left :5px;" class="btn btn-danger"></h:button>
+                                
+                            </h:form>
+                        </center>
                     </section>    
                 </article>
             </section>
@@ -98,7 +103,6 @@
         </div>
         <script src="../js/jquery-3.2.1.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
-        <a href="HtmlPages/Home.html" >Home</a><br></br>
     </h:body>
 </html>
 
