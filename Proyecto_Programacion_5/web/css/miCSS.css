@@ -3,6 +3,30 @@
     margin-top:30px;
 }
 
+body{
+background:url(../Imagenes/fondo.jpg);
+background-size:auto; 
+    
+}
+
+/*Footer*/
+footer{
+    background-color:black;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    color:white;
+    position: absolute;
+bottom: 0;
+}
+
+#pie a,p{
+    text-align:center;
+    color:white;
+ }
+
+
+
+
 /*.container-fluid h1{
     text-align:center;
     color:yellow;
@@ -60,18 +84,6 @@ aside{
     font-size:25px; 
 }
 
-/*Footer*/
-#pie{
-    background-color:black;
-    border-bottom-left-radius:15px;
-    border-bottom-right-radius:15px;
-    color:white;
-    
-}
-#pie a,p{
-    text-align:center;
-    color:white;
- }
 
 h1 {
     font-family: 'Comic Sans MS';
@@ -87,6 +99,7 @@ h1 {
 
 #ComprarJuego, #Acercade, #formulario, #Home, #galeria {
     background-color: whitesmoke;
+    
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;

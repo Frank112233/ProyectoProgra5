@@ -4,87 +4,102 @@
     <title>Home</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <!--Mi Hoja de Estilos Personalizada-->
     <link rel="stylesheet" type="text/css" href="../css/miCSS.css" />
 
+
 </head>
-<body style="background:url(../Imagenes/bgImg.jpg) repeat; background-size:auto;">
+<h:body>
     <div class="container-fluid" >
-        <header class="col-xs-12" >
+        <h:header class="col-xs-12" >
             <nav class="navbar navbar-inverse" id="containerMenu">
                 <div class="container-fluid" >
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
                         <a class="navbar-brand" href="Home.html">Inicio</a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
-                                    Video Juegos <span class="caret"></span>
+                                    Clientes <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu" style="background-color:black">
-                                    <li> <a href="Galeria.html">Juegos para PS3</a> </li>
-                                    <li> <a href="Comprar Juego.html">Comprar Juego</a> </li>
-                                    <li> <a href="Formulario.html">Contactenos</a> </li>
+                                    <li> <a href="Galeria.html">Nuevo Cliente</a> </li>
+                                    <li> <a href="Galeria.html">Aprobacion</a> </li>
+                                    <li> <a href="Galeria.html">Nuestros Clientes</a> </li>
                                 </ul>
                             </li>
-                            <li><a href="Acerca.html">Acerca de...</a></li>
-                            <li><a href="Register.html">Log in</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                                    Mantenimiento <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color:black">
+                                    <li> <a href="Galeria.html">Funcionarios</a> </li>
+                                    <li> <a href="Galeria.html">Productos</a> </li>
+                               </ul>
+                            </li>
+                            
+                                                        <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                                    Gestion <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color:black">
+                                    <li> <a href="Pedido.html">Pedido</a> </li>
+                                    <li> <a href="Pedido.html">Facturación</a> </li>
+                                    <li> <a href="Pedido.html">Despacho</a> </li>
+                               </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                                    Reportes <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color:black">
+                                    <li> <a href="Reportes.html">Pedidos</a> </li>
+                                    <li> <a href="Reportes.html">Ventas</a> </li>
+                               </ul>
+                            </li>
+                            
+                            <li><a href="Acerca de.xhtml">Acerca de...</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-        </header>
+        </h:header>
     </div>
 
     <!--Seccion Articulo y Side
     <div cbar-->    
     <div class="container" id="Home">
-        <section class="main row">
-            <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <p style="color:black">
-                    <center><h1 >Video Juegos J&F</h1></center>
-                    <h3 style="font-family:Arial; color: cornflowerblue; text-align:center">
-                        Tu tienda de videojuegos online donde encontraras las mejores ofertas para comprar tus juegos favoritos.
-                        Con envios gratuitos a partir de 40 mil colones.
-                    </h3>
-                </p>
-                <br />
-            </article>
-            <center><a href="Galeria.html"><img src="../Imagenes/Juegos Inicio.jpg" class="img-responsive" style="width:100%; height:600px" /></a></center>
-        </section>
-        <br />
+    
     </div>
 
     <!--Pie de Página-->
     <div class="container-fluid" style="margin-bottom:40px">
-        <footer class="col-xs-12">
-            <div id="pie">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <br />
-                        <p>
-                            <a href="Home.html">Home  |</a>
-                            <a href="Formulario.html">Contactenos</a>
-                        </p>
+          <h:footer class="col-xs-12">
+                <div id="pie">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <br />
+                            <p>
+                                <a href="Home.html">Home  |</a>
+                                <a href="Formulario.html">Contactenos</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p>Copyright &#169; Projecto Progra 4 (UTN 2018)</p>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Copyright &#169; Proyecto progra 5 (UTN 2019)</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
+            </h:footer>
+      </div>
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-</body>
+
+</h:body>
+
 </html>

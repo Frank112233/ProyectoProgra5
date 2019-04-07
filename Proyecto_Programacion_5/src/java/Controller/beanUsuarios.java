@@ -8,8 +8,9 @@ package Controller;
 import DAO.SNMPExceptions;
 import Model.Perfil;
 import Model.Persona;
-import Model.PersonaDB;
+import Model.UsuarioDB;
 import Model.Usuario;
+import java.io.IOException;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
@@ -39,7 +40,7 @@ public class beanUsuarios implements Serializable {
     LinkedList<Perfil> listaPerfiles= new LinkedList<Perfil>();
     Usuario miUsuario;
     Perfil miPerfil;
-    PersonaDB personaDB;
+    UsuarioDB personaDB;
     int selectPerfil;
     int selectUsuario;
     String selectClave;
@@ -50,7 +51,7 @@ public class beanUsuarios implements Serializable {
         int codigo=0;
         
         LinkedList<Perfil> lista = new LinkedList<Perfil>();
-        personaDB = new PersonaDB();
+        personaDB = new UsuarioDB();
         
         lista = personaDB.todoPerfil();
         
@@ -71,7 +72,7 @@ public class beanUsuarios implements Serializable {
         
   }
 
-     public String autenticar() throws SNMPExceptions, SQLException{
+     public String autenticar() throws SNMPExceptions, SQLException, IOException{
          
          this.miUsuario= this.personaDB.unUsuario(this.selectUsuario);
          
@@ -84,7 +85,10 @@ else{
     }
     else{
     if(miUsuario.getClave().equals(this.selectClave)){
-        this.mensajeLogin="Exito";
+    FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("Usuario",selectUsuario);
+    FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("Perfil",selectPerfil);
+    FacesContext.getCurrentInstance().getExternalContext().redirect("Home.html");
+    
     }
     else{
     this.mensajeLogin="Clave Incorrecta";
@@ -117,7 +121,7 @@ return this.mensajeLogin;
 
     public LinkedList<Perfil> getListaPerfiles() throws SNMPExceptions, SQLException {
                 LinkedList<Perfil> lista = new LinkedList<Perfil>();
-        personaDB = new PersonaDB();
+        personaDB = new UsuarioDB();
         
         lista = personaDB.todoPerfil();
         
@@ -147,11 +151,11 @@ return this.mensajeLogin;
         this.miPerfil = miPerfil;
     }
 
-    public PersonaDB getPersonaDB() {
+    public UsuarioDB getPersonaDB() {
         return personaDB;
     }
 
-    public void setPersonaDB(PersonaDB personaDB) {
+    public void setPersonaDB(UsuarioDB personaDB) {
         this.personaDB = personaDB;
     }
 

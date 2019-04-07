@@ -1,0 +1,8 @@
+{
+    "elements": {
+        "h:body": {},
+        "h:header": {},
+        "h:footer": {}
+    },
+    "attributes": {}
+}

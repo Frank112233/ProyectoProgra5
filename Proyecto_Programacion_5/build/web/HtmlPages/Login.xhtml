@@ -11,7 +11,7 @@
         <!--Mi Hoja de Estilos Personalizada-->
         <link rel="stylesheet" type="text/css" href="../css/miCSS.css" />
     </h:head>
-    <h:body style="background:url(../Imagenes/Tacos.jpg) no-repeat; background-size: cover;">
+    <h:body>
        
         
         <div class="container-fluid" >
@@ -19,11 +19,6 @@
                 <nav class="navbar navbar-inverse" id="containerMenu">
                     <div class="container-fluid" >
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
                             <a class="navbar-brand" href="Login.xhtml">Inicio</a>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
@@ -63,7 +58,8 @@
                                     
                                 </tr>
                             </table>
-                             <h:commandButton value="Aceptar" style="margin-left :5px;" class="btn btn-success" action="#{beanUsuarios.autenticar()}"></h:commandButton>
+                             <h:commandButton value="Aceptar" style="margin-left :5px;" class="btn btn-success" type="submit"
+                                              action="#{beanUsuarios.autenticar()}"></h:commandButton>
                             
                              
                              <h:commandButton value="Cancelar" style="margin-left :5px;" class="btn btn-danger"></h:commandButton>
